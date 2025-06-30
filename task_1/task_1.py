@@ -5,6 +5,7 @@
 повторного використання вже обчислених значень чисел Фібоначчі.
 '''
 
+
 def caching_fibonacci():
     cache = {}
 
@@ -24,6 +25,7 @@ def caching_fibonacci():
 
 # Отримуємо функцію fibonacci
 fib = caching_fibonacci()
+
 
 # Використовуємо функцію fibonacci для обчислення чисел Фібоначчі
 print(fib(10))  # Виведе 55
