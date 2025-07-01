@@ -13,7 +13,7 @@ def input_error(func):
         except ValueError:
             return "Give me name and phone please."
         except IndexError:
-            return
+            return "Enter the argument for the command"
         except KeyError:
             return "Enter user name please"
 
