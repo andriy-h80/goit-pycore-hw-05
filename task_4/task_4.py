@@ -41,7 +41,7 @@ def change_contact(args, contacts):
         contacts[name] = phone
         return "Contact changed."
     else:
-        return KeyError
+        raise KeyError
 
 
 @input_error
@@ -50,7 +50,7 @@ def show_phone(args, contacts):
     if name in contacts:
         return contacts[name]
     else:
-        return KeyError
+        raise KeyError
 
 
 @input_error
@@ -83,6 +83,10 @@ def main():
             print(show_all(contacts))
         else:
             print("Invalid command.")
+
+
+if __name__ == "__main__":
+    main()
 
 
 # Enter a command: add
